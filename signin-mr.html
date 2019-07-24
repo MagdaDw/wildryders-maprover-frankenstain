@@ -16,25 +16,25 @@
             height: 100%;
             width: 100%;
         }
+
         div#form-wrap {
-            background-color: white;
+            background-color:gainsboro;
             opacity: 0.8;
-            display: block;
-            margin-left: auto;
+            display: -moz-box;
+            margin-left: 35%;
             margin-right: auto;
-            bottom: 60%;
             width: auto;
             height: auto;
-            padding: 10px;
+            padding: 50px;
         }
         /* Full-width input fields */
         input[type=text], input[type=password], input[type=email] {
             width: 100%;
             opacity: 0.9;
-            padding: 12px 20px;
-            margin: 8px 0;
+            padding: 10px 12px;
+            margin: 16px 0;
             display: inline-block;
-            border: 1px solid #ccc;
+            border: 5px solid #ccc;
             box-sizing: border-box;
         }
         /* Set a style for all buttons */
@@ -146,6 +146,7 @@
             <label for="psw"><b>Password</b></label>
             <input type="password" id="passwordInputSignin" placeholder="Password" pattern=".*" required>
             <input type="submit" value="Sign in">
+            <a href="register-mr.html">Register</a>
         </div>
 
     </form>
@@ -161,9 +162,9 @@
 <script>
     var map = L.map('map', {zoomControl: false}).setView([-41.2858, 174.78682], 14);
     mapLink =
-        '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        '<a href="https://openstreetmap.org">OpenStreetMap</a>';
     L.tileLayer(
-        'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; ' + mapLink + ' Contributors',
             maxZoom: 18,
         }).addTo(map);
